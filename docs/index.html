@@ -35,6 +35,7 @@
         <p class="eyebrow">Direct to my inbox</p>
         <h2 id="form-title">How can I help?</h2>
         <p class="form-intro">No GitHub account needed. Leave your email if you’d like a reply.</p>
+        <p class="service-status" role="status">The email form is not ready yet. For now, <a href="mailto:jerrylijiaming@gmail.com?subject=Anki%20deck%20support">email Jerry directly</a> or <a href="https://github.com/jerryli27/anki-deck-support/issues/new?template=deck-support.yml">open a public issue</a>.</p>
         <form action="https://formsubmit.co/jerrylijiaming@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Anki deck support — new message">
           <input type="hidden" name="_template" value="table">
@@ -50,7 +51,7 @@
           <label for="message">Message <span class="required">required</span></label>
           <textarea id="message" name="Message" required minlength="10" maxlength="10000" rows="6" placeholder="Include the card’s question and any details that would help me find the problem."></textarea>
           <div class="field-row"><div><label for="name">Your name <span class="optional">optional</span></label><input id="name" name="Name" maxlength="100" autocomplete="name"></div><div><label for="email">Your email <span class="optional">for a reply</span></label><input id="email" name="email" type="email" maxlength="254" autocomplete="email" inputmode="email"></div></div>
-          <button type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <button type="submit" disabled title="Email form setup is in progress">Email form not yet available</button>
           <p class="privacy">Your message is sent privately to Jerry through <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>, which may show a spam check. Don’t include passwords or sensitive personal information.</p>
         </form>
       </section>

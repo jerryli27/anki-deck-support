@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Get help with Jerry's Anki decks. Report a card error, suggest an improvement, or ask a question.">
+  <title>Anki Deck Support · Jerry Li</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#report">Skip to the support form</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="Anki Deck Support home"><span class="mark" aria-hidden="true">A</span><span>Anki Deck Support<span class="byline">by Jerry Li</span></span></a>
+    <a class="quiet-link" href="https://github.com/jerryli27/anki-deck-support/issues">Public issue tracker <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">A little help for your next review</p>
+      <h1 id="intro-title">Better cards.<br>Better practice.</h1>
+      <p class="lede">Found a mistake, have a suggestion, or need a hand? Get in touch about any of my Anki decks.</p>
+      <a class="jump" href="#report">Send a message <span aria-hidden="true">↓</span></a>
+    </section>
+    <div class="support-layout">
+      <aside class="guide" aria-labelledby="guide-title">
+        <p class="eyebrow">A helpful report</p>
+        <h2 id="guide-title">Show me where<br>you got stuck.</h2>
+        <ol class="steps">
+          <li><strong>Name the deck.</strong><span>Paste its AnkiWeb link if you have it.</span></li>
+          <li><strong>Identify the card.</strong><span>Copy the question, or describe what appears on the front.</span></li>
+          <li><strong>Describe the problem.</strong><span>What happened, and what did you expect instead?</span></li>
+        </ol>
+        <div class="note"><span class="note-label">Prefer GitHub?</span><p>You can also <a href="https://github.com/jerryli27/anki-deck-support/issues/new?template=deck-support.yml">open a public issue</a>. A GitHub account is required for that option.</p></div>
+      </aside>
+      <section class="form-panel" id="report" aria-labelledby="form-title">
+        <p class="eyebrow">Direct to my inbox</p>
+        <h2 id="form-title">How can I help?</h2>
+        <p class="form-intro">No GitHub account needed. Leave your email if you’d like a reply.</p>
+        <form action="https://formsubmit.co/jerrylijiaming@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Anki deck support — new message">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://jerryli27.github.io/anki-deck-support/thanks.html">
+          <input type="hidden" name="_url" value="https://jerryli27.github.io/anki-deck-support/">
+          <div class="honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <label for="deck">Deck name <span class="required">required</span></label>
+          <input id="deck" name="Deck" required maxlength="160" placeholder="Which deck is this about?" autocomplete="off">
+          <label for="deck-url">AnkiWeb deck link <span class="optional">optional</span></label>
+          <input id="deck-url" name="Deck link" type="url" maxlength="500" placeholder="https://ankiweb.net/shared/info/…" inputmode="url">
+          <label for="topic">Topic</label>
+          <select id="topic" name="Topic"><option>Card error or correction</option><option>Technical problem</option><option>Suggestion</option><option>Question</option><option>Something else</option></select>
+          <label for="message">Message <span class="required">required</span></label>
+          <textarea id="message" name="Message" required minlength="10" maxlength="10000" rows="6" placeholder="Include the card’s question and any details that would help me find the problem."></textarea>
+          <div class="field-row"><div><label for="name">Your name <span class="optional">optional</span></label><input id="name" name="Name" maxlength="100" autocomplete="name"></div><div><label for="email">Your email <span class="optional">for a reply</span></label><input id="email" name="email" type="email" maxlength="254" autocomplete="email" inputmode="email"></div></div>
+          <button type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <p class="privacy">Your message is sent privately to Jerry through <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>, which may show a spam check. Don’t include passwords or sensitive personal information.</p>
+        </form>
+      </section>
+    </div>
+    <section class="faq" aria-labelledby="faq-title">
+      <p class="eyebrow">Before you send</p><h2 id="faq-title">A few quick answers.</h2>
+      <details><summary>Where can I find the exact card?</summary><p>In Anki’s Browse window, select the card and copy its question into your message. If it has an ID field, including that can help too.</p></details>
+      <details><summary>What helps with an image, audio, or display problem?</summary><p>Include your Anki app and version, your device, and the card’s question. Describe whether the problem affects one card or several. You can add screenshots to a public GitHub issue; don’t post private information.</p></details>
+      <details><summary>Are reports here public?</summary><p>The email form sends a private message. GitHub issues are public and can be read by anyone, so use the email form if you prefer a private conversation.</p></details>
+      <details><summary>Will deck updates arrive automatically?</summary><p>Shared-deck updates usually require downloading the updated deck from AnkiWeb and importing it again. Syncing your own Anki collection does not fetch a shared deck’s latest release.</p></details>
+    </section>
+  </main>
+  <footer class="wrap"><span>Jerry Li · Anki Deck Support</span><span>Independent deck support · Not affiliated with Anki</span><a href="https://github.com/jerryli27/anki-deck-support">Website source ↗</a></footer>
+</body>
+</html>

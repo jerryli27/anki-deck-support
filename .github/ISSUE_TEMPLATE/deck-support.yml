@@ -1,0 +1,43 @@
+name: Deck support
+description: Report an error, suggest an improvement, or ask about one of Jerry's Anki decks.
+title: "[Deck support] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping improve these decks. Issues are public; use [the email form](https://jerryli27.github.io/anki-deck-support/) for a private message."
+  - type: input
+    id: deck
+    attributes:
+      label: Deck name
+      placeholder: Which deck is this about?
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: AnkiWeb deck link
+      placeholder: https://ankiweb.net/shared/info/...
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Card error or correction
+        - Technical problem
+        - Suggestion
+        - Question
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: card
+    attributes:
+      label: Card question or ID
+      description: Copy the question or identify the card as precisely as you can.
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: What happened, and what did you expect? For display or audio problems, include the app version and device.
+    validations:
+      required: true
